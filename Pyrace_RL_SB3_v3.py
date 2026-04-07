@@ -17,7 +17,7 @@ def main():
 
     # 2. Instantiate the model
     # We use PPO (Proximal Policy Optimization), a highly advanced Policy Gradient algorithm
-    # that handles our existing Discrete(3) action limits seamlessly and learns efficiently.
+    # that handles our existing Discrete(4) action limits seamlessly and learns efficiently.
     print("Initializing SB3 PPO Model...")
     model = PPO("MlpPolicy", env, verbose=1, tensorboard_log=f"./runs/{VERSION_NAME}/")
 

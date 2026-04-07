@@ -114,7 +114,7 @@ class Car:
         #check speed
         self.speed -= 0.5
         if self.speed > 10: self.speed = 10
-        if self.speed < 1:  self.speed = 1
+        if self.speed < 0:  self.speed = 0
         
         # required for NEAT
         if map is not None:
